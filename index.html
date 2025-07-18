@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <!-- Example images: use real URLs or local image paths -->
+    <div class="gallery-item" data-category="nature">
+      <img src="https://media.istockphoto.com/id/471926619/photo/moraine-lake-at-sunrise-banff-national-park-canada.jpg?s=612x612&w=0&k=20&c=mujiCtVk5QA697SD3d8V8BGmd91-8HlxCNHkolEA0Bo=" alt="Nature 1" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4U8gfj9mn7ps1SgyJszC6sau3ka5GwpuXo8m-6Mfb18iMByJGsIdgLaB3MLNMp7Pwk2Q&usqp=CAU" alt="Nature 2" />
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHx8MA%3D%3D" alt="City 1" />
+      <img src="https://t4.ftcdn.net/jpg/02/83/83/93/360_F_283839302_yt6JIsE96Pj4PydFDcBNKDUnuSpYB9h0.jpg" alt="City 2" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="https://t4.ftcdn.net/jpg/03/60/27/57/360_F_360275716_KwTE63jCRknTbo9yrTlSo6d2tp7JV9pg.jpg" alt="People 1" />
+      <img src="https://media.istockphoto.com/id/1346125184/photo/group-of-successful-multiethnic-business-team.jpg?s=612x612&w=0&k=20&c=5FHgRQZSZed536rHji6w8o5Hco9JVMRe8bpgTa69hE8=" alt="People 2" />
+    </div>
+    <!-- Add more images as needed -->
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Lightbox" />
+    <div class="nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
